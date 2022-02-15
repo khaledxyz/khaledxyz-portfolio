@@ -1,0 +1,20 @@
+.btn{
+    color: $white;
+    padding: 5px 10px;
+    border-radius: $radius;
+    transition: 0.2s;
+}
+
+.primary{
+    background-color: $primary;
+    &:hover{background-color: darken($primary, 10%);}
+}
+.secondary{
+    background-color: $info;
+    &:hover{background-color: darken($info, 10%);}
+}
+.outline{
+    background-color: transparent;
+    border: 1px $primary solid;
+    &:hover{background-color: lighten($black, 10%);}
+}

@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+        
+    &::-webkit-scrollbar{display: none;} // hides scroll bar for chrome, safari and opera
+    -ms-overflow-style: none;  // IE and Edge 
+    scrollbar-width: none;  // Firefox
+}
+
+li{list-style: none;}
+
+a{
+    color: white;
+    text-decoration: none;
+
+    font-weight: 300;
+    
+    transition: 0.2s;
+    &:hover{color: darken(white, 10%);}
+}
+
+section{
+    margin-bottom: 100px;
+}

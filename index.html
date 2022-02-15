@@ -2,54 +2,92 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles.css">
-    <title>GMC CSS Checkpoint - Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Port</title>
 </head>
 <body>
-    <nav>
-        <a class="logo" href="#">khaled.xyz</a>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="">Skills</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a class="btn primary" href="">Contact</a></li>
-        </ul>
+
+    <nav class="navbar">
+        <div class="empty"></div> <!-- empty div to center the logo in the mobile view -->
+        <a href="#" class="logo">khaled.xyz</a>
+        <div class="menu"><div></div><div></div><div></div></div> <!-- menu icon -->
+        <div class="nav-links">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Skills</a></li>
+                <li><a href="">Clients</a></li>
+                <li><a href="">Projects</a></li>
+                <a class="btn primary" href="">Contact</a>
+            </ul>
+        </div>
     </nav>
 
-    <header>
-        <h1>Hey there, I'm Khaled 👋</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quo culpa <br> quos dolores adipisci incidunt, inventore assumenda quia sed voluptatibus!</p>
-        <div class="buttons">
-            <li><a class="btn primary" href="">Contact</a></li>
-            <li><a class="btn outline" href="">Projects</a></li>    
+    <header class="header">
+        <div class="hero-content">
+            <h1>Hey there, I'm <span>Khaled 👋</span><br>Web Developer</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum facere quia tenetur ipsum voluptates aperiam iure nemo eveniet optio soluta.</p>
+            <div>
+                <a href="" class="btn primary">Contact</a>
+                <a href="" class="btn outline">Projects</a>    
+            </div>
         </div>
     </header>
 
     <main>
-        <section id="skills" class="skills">
-            
+        <section class="about">
+            <img src="./assets/illustrations/dev.png" alt="Developer Image">
+            <div class="details">
+                <h1>About Me</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima cupiditate veritatis dignissimos repellendus, reiciendis exercitationem molestiae nesciunt, nobis quod magnam similique magni, tempore error quo maxime voluptatem facere eos nihil mollitia numquam facilis nisi dolorum adipisci? Deserunt ut sapiente quidem debitis. Ab enim voluptatibus sint esse natus veritatis doloribus eveniet.</p>
+            </div>
         </section>
 
-        <section id="contact" class="contact">
-            <h1>Contact me</h1>
-            <p>Send me a message!</p>
-            <form>
-                <input type="text" name="first name" placeholder="Full Name"><br><br>
-                <input type="email" name="email" placeholder="Email Address"><br><br>
-                <textarea name="message" cols="21" rows="5" placeholder="Your Message"></textarea><br><br>
-                <input class="btn primary" type="submit" value="Submit">
-            </form>
-            <p>You can also find me here!</p>
-            <div class="social">
-                <a href="https://facebook.com"><img src="./images/icons/facebook.svg" width="25px" alt="facebook"/></a>
-                <a href="https://instagram.com"><img src="./images/icons/instagram.svg" width="25px" alt="instagram"/></a>
-                <a href="https://twitter.com"><img src="./images/icons/twitter.svg" width="25px" alt="twitter"/></a><br>
-            </div>        
+        <section class="skills">
+            <div class="details">
+                <h1>Skills</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima cupiditate veritatis dignissimos repellendus, reiciendis exercitationem molestiae nesciunt, nobis quod magnam similique magni, tempore error quo maxime voluptatem facere eos nihil mollitia numquam facilis nisi dolorum adipisci? Deserunt ut sapiente quidem debitis. Ab enim voluptatibus sint esse natus veritatis doloribus eveniet.</p>
+            </div>
+            <img src="./assets/illustrations/skills.png" width="500px" alt="Developer Image">
         </section>
+
+
+        <section class="clients">
+            <h1>My Clients</h1>
+            <div class="clients-imgs">
+                <img src="./assets/clients/adobe.svg" alt="">
+                <img src="./assets/clients/gomycode.svg" alt="">
+                <img src="./assets/clients/google.svg" alt="">
+                <img src="./assets/clients/microsoft.svg" alt="">
+                <img src="./assets/clients/discord.svg" alt="">
+                <img src="./assets/clients/github.svg" alt="">
+            </div>
+        </section>
+
+        <section class="contact">
+            <center><h1>Let's Get In Touch!</h1></center>
+            <form class="contact-form">
+                <input type="text" placeholder="Full Name" required>
+                <input type="text" placeholder="Subject" required>
+                <input type="email" placeholder="Email Address" required>
+                <textarea name="message" rows="0" cols="23" placeholder="Your Message" required></textarea>
+                <a href="" class="btn primary">Submit!</a>
+            </form>
+            <h2>Or Catch Me Up Here!</h2>
+            <div class="social">
+                <a href=""><i class="fa-brands fa-facebook-square"></i></a>
+                <a href=""><i class="fa-brands fa-instagram-square"></i></a>
+                <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                <a href=""><i class="fa-brands fa-github-square"></i></a>
+            </div>
+        </section>
+
     </main>
-    <footer>
-        <center><p>Made with ❤️ by <a href="https://github.com">Khaled</a>, 2022 All Rights Reserved ©</p></center>
-    </footer>
+
+    <!-- <footer class="footer">
+        <p>Made with ❤️ by <a href="https://github.com">Khaled</a>, 2022 All Rights Reserved ©</p>
+    </footer>     -->
 </body>
 </html>

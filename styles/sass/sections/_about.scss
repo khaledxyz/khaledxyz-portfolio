@@ -1,0 +1,11 @@
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .details{
+        p{text-align: justify;}
+        text-justify: inter-word;
+        max-width: 25%;
+    }
+}
