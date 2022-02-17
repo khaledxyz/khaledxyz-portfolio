@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/css/index.css">
+    <script src="./app/script.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <title>Port</title>
 </head>
@@ -37,22 +38,31 @@
     </header>
 
     <main>
+
         <section class="about">
             <img src="./assets/illustrations/dev.png" alt="Developer Image">
             <div class="details">
                 <h1>About Me</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima cupiditate veritatis dignissimos repellendus, reiciendis exercitationem molestiae nesciunt, nobis quod magnam similique magni, tempore error quo maxime voluptatem facere eos nihil mollitia numquam facilis nisi dolorum adipisci? Deserunt ut sapiente quidem debitis. Ab enim voluptatibus sint esse natus veritatis doloribus eveniet.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima cupiditate veritatis dignissimos repellendus, reiciendis exercitationem molestiae nesciunt, nobis quod magnam similique magni, tempore error quo maxime voluptatem facere eos nihil mollitia numquam facilis nisi dolorum adipisci? Deserunt ut sapiente quidem debitis. Ab enim voluptatibus sint esse natus veritatis doloribus eveniet.</p><br>
+                <a href="" class="btn primary">Download my resume!</a>
             </div>
         </section>
 
         <section class="skills">
-            <div class="details">
-                <h1>Skills</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima cupiditate veritatis dignissimos repellendus, reiciendis exercitationem molestiae nesciunt, nobis quod magnam similique magni, tempore error quo maxime voluptatem facere eos nihil mollitia numquam facilis nisi dolorum adipisci? Deserunt ut sapiente quidem debitis. Ab enim voluptatibus sint esse natus veritatis doloribus eveniet.</p>
+            <div class="progressBar">
+                <h4>HTML5</h4>
+                <div class="progressBarContainer"><div class="progressBarValue value-95"></div></div>
+            </div>      
+            <div class="progressBar">
+                <h4>CSS</h4>
+                <div class="progressBarContainer"><div class="progressBarValue value-79"></div></div>
             </div>
-            <img src="./assets/illustrations/skills.png" width="500px" alt="Developer Image">
+            <div class="progressBar">
+                <h4>JavaScript</h4>
+                <div class="progressBarContainer"><div class="progressBarValue value-85"></div></div>
+            </div>      
+   
         </section>
-
 
         <section class="clients">
             <h1>My Clients</h1>
@@ -66,7 +76,7 @@
             </div>
         </section>
 
-        <section class="contact">
+        <!-- <section class="contact">
             <center><h1>Let's Get In Touch!</h1></center>
             <form class="contact-form">
                 <input type="text" placeholder="Full Name" required>
@@ -82,12 +92,12 @@
                 <a href=""><i class="fa-brands fa-twitter-square"></i></a>
                 <a href=""><i class="fa-brands fa-github-square"></i></a>
             </div>
-        </section>
+        </section>-->
 
     </main>
 
-    <!-- <footer class="footer">
+    <footer class="footer">
         <p>Made with ❤️ by <a href="https://github.com">Khaled</a>, 2022 All Rights Reserved ©</p>
-    </footer>     -->
+    </footer>
 </body>
 </html>

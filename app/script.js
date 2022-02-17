@@ -1,0 +1,1 @@
+document.querySelector('clients-imgs').setAttribute('draggable', false); // to prevent user from dragging the logos in the clients section
