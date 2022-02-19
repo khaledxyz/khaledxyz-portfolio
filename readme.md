@@ -6,4 +6,4 @@ Also please note that this was coded in a 24" 1080p monitor with no responsivene
 
 And I didn't really code the JS part of the scroll up button, it was taken from W3School, but I understand some parts of it.
 
-And yeah, that's it, hope you like it.
+A live preview is on the top right corner. And yeah, that's it, hope you like it.
