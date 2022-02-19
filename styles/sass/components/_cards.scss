@@ -7,9 +7,9 @@
     .card-image{
         border-radius: $radius $radius 0px 0px;
         
-        background: url(/assets/placeholder.png) no-repeat center;
+        background: url(../../../assets/projects/dbrandIcons.png) no-repeat center;
         background-size: cover;
-        height: 150px;
+        height: 160px;
     }
     .card-details{
         & > *{margin-bottom: 20px;}

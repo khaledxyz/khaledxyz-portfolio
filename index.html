@@ -9,6 +9,7 @@
     <title>Port</title>
 </head>
 <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
 
     <nav class="navbar">
         <div class="empty"></div> <!-- empty div to center the logo in the mobile view -->
@@ -16,12 +17,12 @@
         <div class="menu"><div></div><div></div><div></div></div> <!-- menu icon -->
         <div class="nav-links">
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Skills</a></li>
-                <li><a href="">Clients</a></li>
-                <li><a href="">Projects</a></li>
-                <a class="btn primary" href="">Contact</a>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#clients">Clients</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <a class="btn primary" href="#contact">Contact</a>
             </ul>
         </div>
     </nav>
@@ -38,39 +39,92 @@
     </header>
 
     <main>
-
-        <section class="about">
+        <section class="about" id="about">
             <img src="./assets/illustrations/dev.png" alt="Developer Image">
             <div class="details">
-                <h1>About Me</h1>
+                <h1>About Me!</h1>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima cupiditate veritatis dignissimos repellendus, reiciendis exercitationem molestiae nesciunt, nobis quod magnam similique magni, tempore error quo maxime voluptatem facere eos nihil mollitia numquam facilis nisi dolorum adipisci? Deserunt ut sapiente quidem debitis. Ab enim voluptatibus sint esse natus veritatis doloribus eveniet.</p><br>
                 <a href="" class="btn primary">Download my resume!</a>
             </div>
         </section>
 
-        <section class="skills">
-            <h1>My Skills</h1>
-            <div class="progressBar">
-                <h4>HTML5</h4>
-                <div class="progressBarContainer"><div class="progressBarValue value-90"></div></div>
-            </div>      
-            <div class="progressBar">
-                <h4>CSS</h4>
-                <div class="progressBarContainer"><div class="progressBarValue value-70"></div></div>
+        <section class="skills" id="skills">
+            <h1>My Skills!</h1>   
+            <div class="skills-container">
+                <div class="technical-skills">
+                    <div class="progressBar">
+                        <h4>HTML5</h4>
+                        <div class="progressBarContainer"><div class="progressBarValue value-90"></div></div>
+                    </div>      
+                    <div class="progressBar">
+                        <h4>CSS</h4>
+                        <div class="progressBarContainer"><div class="progressBarValue value-70"></div></div>
+                    </div>
+                    <div class="progressBar">
+                        <h4>JavaScript</h4>
+                        <div class="progressBarContainer"><div class="progressBarValue value-80"></div></div>
+                    </div>      
+                    <div class="progressBar">
+                        <h4>NodeJs</h4>
+                        <div class="progressBarContainer"><div class="progressBarValue value-60"></div></div>
+                    </div>    
+                </div>
+                
+                <div class="soft-skills">
+                    <div class="progressBar">
+                        <h4>Teamwork</h4>
+                        <div class="progressBarContainer"><div class="progressBarValue value-90"></div></div>
+                    </div>      
+                    <div class="progressBar">
+                        <h4>Problem Solving</h4>
+                        <div class="progressBarContainer"><div class="progressBarValue value-80"></div></div>
+                    </div>
+                    <div class="progressBar">
+                        <h4>Project Leading</h4>
+                        <div class="progressBarContainer"><div class="progressBarValue value-70"></div></div>
+                    </div>      
+                    <div class="progressBar">
+                        <h4>Critical Thinking</h4>
+                        <div class="progressBarContainer"><div class="progressBarValue value-90"></div></div>
+                    </div>          
+                </div>    
             </div>
-            <div class="progressBar">
-                <h4>JavaScript</h4>
-                <div class="progressBarContainer"><div class="progressBarValue value-80"></div></div>
-            </div>      
-            <div class="progressBar">
-                <h4>NodeJs</h4>
-                <div class="progressBarContainer"><div class="progressBarValue value-60"></div></div>
-            </div>      
-   
         </section>
 
-        <section class="clients">
-            <h1>My Clients</h1>
+        <section class="projects" id="projects">
+            <h1>My Projects!</h1><br>  
+            <div class="cards">
+                <div class="card">
+                    <div class="card-image"></div>
+                    <div class="card-details">
+                        <h2>Project Title</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, unde.</p>
+                        <a href="" class="btn primary">Read More</a>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <div class="card-image"></div>
+                    <div class="card-details">
+                        <h2>Project Title</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, unde.</p>
+                        <a href="" class="btn primary">Read More</a>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <div class="card-image"></div>
+                    <div class="card-details">
+                        <h2>Project Title</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, unde.</p>
+                        <a href="" class="btn primary">Read More</a>
+                    </div>
+                </div>    
+            </div>       
+        </section>
+
+        <section class="clients" id="clients">
+            <h1>My Clients!</h1>
             <div class="clients-imgs">
                 <img src="./assets/clients/adobe.svg" alt="">
                 <img src="./assets/clients/gomycode.svg" alt="">
@@ -81,28 +135,28 @@
             </div>
         </section>
 
-        <!-- <section class="contact">
+        <section class="contact" id="contact">
             <center><h1>Let's Get In Touch!</h1></center>
             <form class="contact-form">
                 <input type="text" placeholder="Full Name" required>
                 <input type="text" placeholder="Subject" required>
                 <input type="email" placeholder="Email Address" required>
-                <textarea name="message" rows="0" cols="23" placeholder="Your Message" required></textarea>
-                <a href="" class="btn primary">Submit!</a>
-            </form>
+                <textarea name="message" rows="10" cols="0" placeholder="Your Message" required></textarea>
+                <a href="#" class="btn primary">Submit!</a>
+            </form><br>
+
             <h2>Or Catch Me Up Here!</h2>
             <div class="social">
-                <a href=""><i class="fa-brands fa-facebook-square"></i></a>
-                <a href=""><i class="fa-brands fa-instagram-square"></i></a>
-                <a href=""><i class="fa-brands fa-twitter-square"></i></a>
-                <a href=""><i class="fa-brands fa-github-square"></i></a>
+                <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook-square"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram-square"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
+                <a href="https://github.com" target="_blank"><i class="fa-brands fa-github-square"></i></a>
             </div>
-        </section>-->
-
+        </section>
     </main>
 
     <footer class="footer">
-        <p>Made with ❤️ by <a href="https://github.com">Khaled</a>, 2022 All Rights Reserved ©</p>
+        <p>Made with ❤️ by <a href="https://github.com" target="_blank">Khaled</a>, 2022 All Rights Reserved ©</p>
     </footer>
 </body>
 </html>

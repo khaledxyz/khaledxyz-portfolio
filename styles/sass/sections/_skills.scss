@@ -1,4 +1,11 @@
 .skills{
-    margin: auto;
-    width: 25%;
-}   
+    padding: 50px;
+
+    .skills-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        gap: 50px;    
+    }
+}
