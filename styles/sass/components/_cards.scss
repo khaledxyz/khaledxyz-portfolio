@@ -4,10 +4,10 @@
     border-radius: $radius;
     width: 310px;
     
-    .card-image{
+    .card-image{    
+        background: url(../../../assets/projects/spacewalk.png) no-repeat center;
+
         border-radius: $radius $radius 0px 0px;
-        
-        background: url(../../../assets/projects/dbrandIcons.png) no-repeat center;
         background-size: cover;
         height: 160px;
     }
@@ -15,4 +15,11 @@
         & > *{margin-bottom: 20px;}
         padding: 20px;
     }
+
+    .one{
+        background: url(../../../assets/projects/dbrandIcons.png) no-repeat center;
+    }
+    .two{
+    }
+
 }

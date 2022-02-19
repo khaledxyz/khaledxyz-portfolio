@@ -1,10 +1,16 @@
 .footer{
+    background: url(../../../assets/illustrations/icons-bg.png);
+
     color: white;
 
     background-color: $blueGray;
-    padding: 10px 200px;
+    padding: 50px 200px;
 
     display: flex;
     justify-content: center;
     align-items: center;
+
+    a{
+        text-decoration: underline;
+    }
 }
